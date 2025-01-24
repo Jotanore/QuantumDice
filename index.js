@@ -12,16 +12,20 @@ function showRandomNumber(){
 }
 
 function execQuantumWork(){
-    if(diceOn){
-        cover.classList.remove('--hidden')
-        diceOn = false
-    }else{
-        showRandomNumber()
-        cover.classList.add('--hidden')
-        diceOn = true;
-    }
+    diceOn ? hideDice() : showDice()
 }
 
 function rng(){
     return Math.floor(Math.random() *  6) + 1
+}
+
+function showDice(){
+    showRandomNumber()
+    cover.classList.add('--hidden')
+    diceOn = true;
+}
+
+function hideDice(){
+    cover.classList.remove('--hidden')
+    diceOn = false
 }
