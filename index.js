@@ -20,8 +20,8 @@ function rng(){
 }
 
 function showDice(){
-    showRandomNumber()
     cover.classList.add('--hidden')
+    showRandomNumber()
     diceOn = true;
 }
 
