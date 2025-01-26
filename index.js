@@ -21,11 +21,11 @@ function rng(){
 
 function showDice(){
     cover.classList.add('--hidden')
-    showRandomNumber()
     diceOn = true;
 }
 
 function hideDice(){
     cover.classList.remove('--hidden')
+    showRandomNumber()
     diceOn = false
 }
